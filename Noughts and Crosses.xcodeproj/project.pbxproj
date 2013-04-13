@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		73939FEC1719CB2600F1A87C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73939FEB1719CB2600F1A87C /* main.cpp */; };
 		73939FEE1719CB2600F1A87C /* Noughts_and_Crosses.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 73939FED1719CB2600F1A87C /* Noughts_and_Crosses.1 */; };
+		7393A00B1719CBC600F1A87C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7393A0091719CBC600F1A87C /* Game.cpp */; };
+		7393A00E1719CBCA00F1A87C /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7393A00C1719CBCA00F1A87C /* Map.cpp */; };
+		7393A0101719CC0D00F1A87C /* libncurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7393A00F1719CC0D00F1A87C /* libncurses.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,11 @@
 		73939FE81719CB2600F1A87C /* Noughts and Crosses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Noughts and Crosses"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73939FEB1719CB2600F1A87C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		73939FED1719CB2600F1A87C /* Noughts_and_Crosses.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Noughts_and_Crosses.1; sourceTree = "<group>"; };
+		7393A0091719CBC600F1A87C /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		7393A00A1719CBC600F1A87C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		7393A00C1719CBCA00F1A87C /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		7393A00D1719CBCA00F1A87C /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		7393A00F1719CC0D00F1A87C /* libncurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncurses.dylib; path = usr/lib/libncurses.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7393A0101719CC0D00F1A87C /* libncurses.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 		73939FDF1719CB2500F1A87C = {
 			isa = PBXGroup;
 			children = (
+				7393A00F1719CC0D00F1A87C /* libncurses.dylib */,
 				73939FEA1719CB2600F1A87C /* Noughts and Crosses */,
 				73939FE91719CB2600F1A87C /* Products */,
 			);
@@ -61,6 +71,10 @@
 			isa = PBXGroup;
 			children = (
 				73939FEB1719CB2600F1A87C /* main.cpp */,
+				7393A0091719CBC600F1A87C /* Game.cpp */,
+				7393A00A1719CBC600F1A87C /* Game.h */,
+				7393A00C1719CBCA00F1A87C /* Map.cpp */,
+				7393A00D1719CBCA00F1A87C /* Map.h */,
 				73939FED1719CB2600F1A87C /* Noughts_and_Crosses.1 */,
 			);
 			path = "Noughts and Crosses";
@@ -118,6 +132,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73939FEC1719CB2600F1A87C /* main.cpp in Sources */,
+				7393A00B1719CBC600F1A87C /* Game.cpp in Sources */,
+				7393A00E1719CBCA00F1A87C /* Map.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +232,7 @@
 				73939FF31719CB2600F1A87C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
