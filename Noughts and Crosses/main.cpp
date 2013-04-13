@@ -2,17 +2,25 @@
 //  main.cpp
 //  Noughts and Crosses
 //
-//  Created by Adrian Brink on 13/04/2013.
+//  Created by Adrian Brink on 11/03/2013.
 //  Copyright (c) 2013 Adrian Brink. All rights reserved.
 //
 
-#include <iostream>
+#include "Map.h"
+#include "Game.h"
 
-int main(int argc, const char * argv[])
+#include <stdio.h>
+#include <curses.h>
+
+
+int main()
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";asdf
+    
+    Map m;
+    m.start();
+    getch();
+    m.end();
+    getch();
+    
     return 0;
 }
-
